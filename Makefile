@@ -14,8 +14,20 @@ RM := rm -f
 
 # Source Files
 SRC := \
-    $(wildcard $(SRC_DIR)/commands/*.c) \
-    $(wildcard $(SRC_DIR)/push_swap/*.c)
+    $(SRC_DIR)/commands/push_block.c \
+    $(SRC_DIR)/commands/r_rotate.c \
+    $(SRC_DIR)/commands/rotate.c \
+    $(SRC_DIR)/commands/sort_3_ele.c \
+    $(SRC_DIR)/commands/sort_d_stack_2.c \
+    $(SRC_DIR)/commands/sort_d_stacks.c \
+    $(SRC_DIR)/commands/swap.c \
+    $(SRC_DIR)/push_swap/error_checker.c \
+    $(SRC_DIR)/push_swap/fill_a_to_b.c \
+    $(SRC_DIR)/push_swap/fill_b_to_a.c \
+    $(SRC_DIR)/push_swap/fill_stack.c \
+    $(SRC_DIR)/push_swap/push_swap.c \
+    $(SRC_DIR)/push_swap/split.c \
+    $(SRC_DIR)/push_swap/utilit_stack.c
 
 # Object Files
 OBJ := $(SRC:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)
